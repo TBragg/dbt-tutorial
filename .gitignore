@@ -2,4 +2,4 @@
 logs/
 dbt_packages/
 target/
-/dbt-ga4
+# /dbt-ga4
