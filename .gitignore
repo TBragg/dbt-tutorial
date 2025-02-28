@@ -1,2 +1,4 @@
 .DS_Store
-.dbt.log
+logs/
+dbt_packages/
+target/
