@@ -27,9 +27,10 @@ models:
 
 vars:
   ga4:
-    source_project: "{{ 'data-platform-dev-323920' if target.name == 'dev' else 'data-platform-326016' }}"
-    property_ids: >
-      "{{ '[395229996]' if target.name == 'dev' else '[394934694]' }}"
+    source_project: 'data-platform-dev-323920' # dev
+    property_ids: [395229996] # dev
+    # source_project: 'data-platform-326016' # prod
+    # property_ids: [394934694] # prod
     start_date: "20250225"
     static_incremental_days: 3
     

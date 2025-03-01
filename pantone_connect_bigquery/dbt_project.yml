@@ -27,17 +27,14 @@ models:
 
 vars:
   ga4:
-    source_project: "{{ 'data-platform-dev-323920' if target.name == 'dev' else 'data-platform-326016' }}"
-    property_ids: >
-      "{{ '[250106967]' if target.name == 'dev' else '[262605386]' }}"
+    source_project: 'data-platform-dev-323920' # dev
+    property_ids: [250106967] # dev
+    # source_project: 'data-platform-326016' # prod
+    # property_ids: [262605386] # prod
     start_date: "20250225"
     static_incremental_days: 3
     
     query_parameter_exclusions: ["*all*"] # Exclude these query parameters from the URL
-    
-    default_custom_parameters:
-      - name: "store_code"
-        value_type: "string_value"
 
     # derived_session_properties:
     #   - event_parameter: "page_location"
